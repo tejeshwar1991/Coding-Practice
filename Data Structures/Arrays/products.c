@@ -1,5 +1,5 @@
 /*=============================================
-=            Section comment block            =
+=           Question          		     =
 =============================================*/
 // Given an array of numbers, nums, return an array of numbers products, where products[i] is the product of all nums[j], j != i. 
 // Input : [1, 2, 3, 4, 5] Output: [(2*3*4*5), (1*3*4*5), (1*2*4*5), (1*2*3*5), (1*2*3*4)] = [120, 60, 40, 30, 24] 
@@ -14,7 +14,7 @@
 
 int arr[5] = {1, 2, 3, 4, 5};
 
-
+// O(n2)
 int* array_products(int arr[], int size)
 {
 	int *return_array = (int*) malloc(sizeof(int)*size);
@@ -37,6 +37,7 @@ int* array_products(int arr[], int size)
 	return return_array;
 }
 
+// O(n)
 int* array_products_2(int arr[], int size)
 {
 	int *return_array = (int*) malloc(sizeof(int)*size);
